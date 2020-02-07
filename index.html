@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tisha</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="./js/home.js"></script>
+    <script type="text/javascript" src="./js/bubble.js"></script>
+    <script type="text/javascript" src="./js/merge.js"></script>
+    <script type="text/javascript" src="./js/selection.js"></script>
+    <script type="text/javascript" src="./js/insertion.js"></script>
+    
+
+    <link rel="cloud icon" href="./images/apple.png" type="image/x-icon">
+    
+</head>
+
+
+<body>
+       
+        
+        <nav>
+            <div class="ber">
+                <div class="menu">&#9776;</div>
+            </div>          
+            <ul>
+                <a href="#home"><img class="logo" src="./images/apple.png"  alt="apple"></a>
+                <a href="#home"><li>Home</li></a>                         
+                <a href="#section1"><li>Bubble</li></a>       
+                <a href="#section2"><li>Merge</li></a>       
+                <a href="#section3"><li>Selection</li></a>       
+                <a href="#section4"><li>Insertion</li></a>       
+                <a href="#section5"><li>Quick</li></a>  
+               
+            </ul> 
+              
+
+          </nav>
+
+
+    <section id="home">
+        <div class="content1">
+        
+            <h1>Tisha</h1>            
+            <!--     <p class="center"><img class="mate" src="./images/cat.png" alt="ticha"></p> -->
+            <img class="wrapp" src="./images/hand.png" alt="">
+            <img class="wrapp1" src="./images/bubble.png" alt="">
+
+        </div>     
+        <div class="content2">
+            <img class="wrapp2" src="./images/puzzle.png" alt="">
+            <img class="wrapp3" src="./images/block.png" alt="">
+         </div>
+    </section> 
+   
+     
+    <section id="section1">
+                <h4>Bubble Sort</h4>
+                <h1 id="output"></h1>
+                <img src="./images/bubble.png" alt="bubble1" id="first" />
+          
+                <img src="./images/bubble_method.png" alt="bubble2" id="second" />
+                <button value="Show Hide" id="push" onclick="showHide();">
+                  Flow Chart / Method
+                </button>
+          
+                <!-- <h1 class="bubble_text">Bubble sorting Flow Chart</h1> -->
+                <div class="head2">
+                    Enter your numbers here:
+                    <input type="text" id="num" placeholder="Type your numbers" size="6" />
+                    <button type="button" class="button" onclick="insertion()">
+                        <b>Press</b>
+                    </button>
+                    <button type="button" class="button3" onclick="refreshPage()">
+                        <b>Refresh</b>
+                    </button>
+                </div>
+          
+                <div id="a"></div>
+                    <br />
+                    <button type="button" class="button2" onclick="bubbleSort(Array)">
+                    Sort
+                    </button>
+                    <br />
+                    <br />
+                <div id="b"></div>
+    </section>
+
+  
+          
+            <section id="section2">
+                <h1 class="head"> MERGE SORT</h1>
+                <div id="coverr1">
+                    <div class="headd2">Please enter the numbers here: <input type="text" id="nuumm" size="6" /><input type="submit" value="ADD" class="buton" onclick="firstt()" >
+                        <div id="aa1"></div>
+                        <br/>
+                        <button type="button" class="buton2" onclick="second(array)">Sort</button>
+                        <br/>
+                        <br/>
+                        <div id="b1"></div>
+                    </div>
+                    <div class="exp1"><img class="sdf" src="./images/Merge-Sort-Algorithm.png"/></div>
+                    <div class="exp3">What is merge sort?<div class="exp4"></div>
+                    <br/> Merge sort works with divide and conquer logic.<br/> It solves in three steps. <br/>First step is divide. <br/> Second step is conquer. Separeted pieces are sorted in this part. <br/> Third Step is combine.</div></div>   
+                </div>
+            
+            </section>
+
+
+
+                   <section id="section3">
+                            <h4 class="article3">Selection Sort</h4>
+                            <div class="wrapper3">
+                                <div class="content3">
+                                    <div class="form3">
+                                        <h5 class="article3_1">Let's try Selectionsort!!</h5>
+                                        <div class="input3">
+                                            <input type="number" class="inputValue" placeholder="number here">
+                                        </div>
+                                        <div class="btn-wrapper">
+                                            <button class="clear" onClick="clearValueSelecion()">Clear</button>
+                                            <button class="add" onClick="addValueSelecion()">Add</button>
+                                            <button class="sort" onClick="executeSelectionSort()">Sort</button>
+                                        </div>
+                                        <div class="result_wrapper3">
+                                            <div class="data_wrapper">
+                                                <p>Data : </p>
+                                                <p id="selResult" class="preResult"></p>
+                                            </div>
+                                            <div class="answer_wrapper">
+                                                <p>Result : </p>
+                                                <p class="result"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flow_chart3">
+                                    <h5 class="article3_2">What is Selectionsort??</h5>
+                                    <img class="flow-chart-picture" src="./images/selectionSort%20(1).png" alt="selectionsort picture">
+                                </div>
+                                <div class="picture_container">
+                                    <div class="banner">
+                                        <h5 class="banner-heading">Display how to selectionsort!!
+                                        </h5>
+                                        <div class="arrow">
+                                            <i class="fas fa-arrow-down"></i>
+                                        </div>
+                                        <button class="banner-btn">Click Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flow_chart3_1">
+                                <img class="flow-chart-picture1" src="./images/selectionSort%20(1).png" alt="selectionsort picture">
+                                <div class="x-btn">&#10005;</div>
+                            </div>
+                     </section>
+       
+
+    <section id="section4">                
+                <div class="insertionsort_part">
+                    ​
+                            <div class="allcontain">
+                            <h1 class="menu_insert">Insertion sorting</h1>
+                           
+                        <div class="wrapper">
+                        ​
+                        ​
+                        ​
+                                <div class="container">
+                                    
+                                
+                        ​
+                                    <!-- input part -->
+                                    <div class="input_insert">
+                                        <p id="inputIns" class="text_insert">Type a number</p>
+                                        <input type="number" id="inputnumber"  />
+                                    </div>
+                                    
+                                    <!-- all button -->
+                                    <div class="button_insert">
+                                        <!-- add part -->
+                                        <button id="addIns" onclick="firstIns()" class="button_insert">Add</button>
+                                        <!-- sort part -->
+                                        <button id="sortIns" onClick="insertionsort()" class="button_insert">Sort</button>
+                                    </div>
+                                        
+                                    <br />
+                                    <br />
+                                    
+                                    <!-- show data  -->
+                                    <p class="text_insert">Data:</p>
+                                    <p id="outputIns"></p>
+                                    <br />
+                                    <p class="text_insert">Result:</p>
+                                    <p id="resultIns"></p>
+                                    <br />
+                                    
+                                </div>
+                        ​
+                                <div class="figure">
+                                    <img src="/image/insertion-sort-1.jpg" alt="figure"　class="example">　
+                                    <p class="text_insert">Insertion sorting flow</p>
+                                </div>
+                        ​
+                            </div>  
+                    </div>
+                </div> 
+   
+    </section>
+
+     <section id="section5">
+        
+        <div class="container5">
+            <h1>Quick Sort</h1> 
+            <div class="flow_chart5">
+                    <img class="flow_chart5" src="images/Quick sort.jpg" alt="Quicksort picture">
+                </div>
+            <div class="container5_1">
+                <div class="form5">
+                    <div class="wrapper-btn1">
+                  Input : <input type="number" id="inputValue"/>
+                    </div>
+                    <div class="wrapper-btn2">
+                    <button id="clear" onClick="clearValue()">Clear</button>
+                    <button id="add" onClick="addValue()">Add</button>
+                    <button id="sort" onClick="execuQuickSort()">Sort</button>
+                    </div>
+                </div>
+                        
+
+                        <div class="wrapper-btn3">
+                             Data : <p id="preResult"></p>
+                             Result : <p id="result"></p>
+                        </div>
+            </div>
+        </div>
+         
+       
+     
+    </section> 
+
+</body>
+
+</html>
